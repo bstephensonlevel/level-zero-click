@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>You\'re in | Level at Zero Click Eve</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Inter+Tight:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#000000;--white:#FFFFFF;--gray:#D9DEF0;
+    --blue:#86D5F4;--blue-hover:#60C5E8;
+    --font-display:"Inter Tight",sans-serif;--font-body:"DM Sans",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:var(--black);}
+  body{
+    font-family:var(--font-body);color:var(--white);line-height:1.6;
+    -webkit-font-smoothing:antialiased;min-height:100vh;
+    display:flex;align-items:center;justify-content:center;
+    padding:40px 20px 56px;
+  }
+  .wrap{width:100%;max-width:520px;text-align:center;}
+  /*.topbar{height:4px;width:64px;background:var(--blue);border-radius:9999px;margin:0 auto 36px;} */
+  .logo{display:block;height:84px;width:auto;margin:0 auto 36px;}
+  .check{
+    width:76px;height:76px;border-radius:9999px;border:3px solid var(--blue);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 28px;
+    animation:pop .45s ease-out both;
+  }
+  .check svg{width:36px;height:36px;}
+  @keyframes pop{0%{transform:scale(.6);opacity:0;}60%{transform:scale(1.08);}100%{transform:scale(1);opacity:1;}}
+  .kicker{
+    font-family:var(--font-body);font-weight:700;font-size:.72rem;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--gray);margin-bottom:14px;
+  }
+  h1{font-family:var(--font-display);font-weight:900;font-size:3rem;line-height:1.02;margin-bottom:20px;}
+  .lead{font-size:1.05rem;color:#ffffff;margin-bottom:14px;}
+  .sub{font-size:.98rem;color:#ffffff;margin-bottom:34px;}
+  .cta{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:14px 30px;font-family:var(--font-display);font-weight:900;font-size:.98rem;
+    color:var(--white);background:transparent;border:1.5px solid rgba(255,255,255,.35);
+    border-radius:9999px;text-decoration:none;transition:border-color .15s ease, background .15s ease;
+  }
+  .cta:hover{border-color:var(--white);background:rgba(255,255,255,.06);}
+  .foot{margin-top:48px;font-size:.7rem;line-height:1.6;color:rgba(255,255,255,.35);}
+  @media(max-width:420px){h1{font-size:2.4rem;}body{padding:32px 16px 48px;}}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar"></div>
+    <img class="logo" alt="Level" src="data:image/png;base64,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">
+
+    <div class="check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#86D5F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+
+    <p class="kicker">Zero Click Eve &middot; Boho Karaoke</p>
+    <h1>You&rsquo;re in.</h1>
+    <p class="lead">Your entry is locked in for the Nintendo Switch 2 drawing.</p>
+    <p class="sub">We&rsquo;ll email the winner after the crawl wraps on Wednesday, June 10. Keep an eye on your inbox, and enjoy the rest of Zero Click Eve.</p>
+
+    <a class="cta" href="https://level.agency">See what Level is building</a>
+
+    <p class="foot">Nintendo and Nintendo Switch are trademarks of Nintendo. This giveaway is run by Level and is not sponsored by, endorsed by, or affiliated with Nintendo or Profound.</p>
+  </main>
+</body>
+</html>
